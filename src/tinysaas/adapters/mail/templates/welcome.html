@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<p style="font-size:14px;line-height:22px;">你好 {{ display_name }}，欢迎加入 {{ app_name }}！</p>
+<p style="font-size:14px;line-height:22px;">
+  你的账号已创建完成。我们已为你准备了初始 credit，可以直接调用已上线的 service。
+</p>
+{% if verify_url %}
+<p style="font-size:14px;line-height:22px;">
+  建议先完成邮箱验证：<a href="{{ verify_url }}" style="color:#2f6fed;">验证我的邮箱</a>
+</p>
+{% endif %}
+{% endblock %}

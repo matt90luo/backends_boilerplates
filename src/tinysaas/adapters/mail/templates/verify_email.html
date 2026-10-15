@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<p style="font-size:14px;line-height:22px;">{{ display_name }}，请确认你的邮箱地址。</p>
+<p style="font-size:14px;line-height:22px;">
+  点击下面的链接即可完成验证：<br />
+  <a href="{{ verify_url }}" style="color:#2f6fed;">{{ verify_url }}</a>
+</p>
+<p style="font-size:13px;color:#8a90a0;">如果这不是你本人的操作，可以忽略这封邮件。</p>
+{% endblock %}

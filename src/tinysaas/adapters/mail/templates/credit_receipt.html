@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<p style="font-size:14px;line-height:22px;">充值成功，感谢你的支持！</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;line-height:24px;">
+  <tr><td style="color:#8a90a0;">金额</td><td align="right">{{ amount }}</td></tr>
+  <tr><td style="color:#8a90a0;">credit</td><td align="right">+{{ credits }}</td></tr>
+</table>
+<p style="font-size:13px;color:#8a90a0;">credit 已到账，可在 dashboard 的账单页面查看流水。</p>
+{% endblock %}
